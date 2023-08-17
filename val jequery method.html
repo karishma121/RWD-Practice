@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>\</title>
+</head>
+<body>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('#btn1').click(function(){
+			var v1=$('#n1').val();
+			var v2=$('#n2').val();
+			var res=parseInt(v1) + parseInt(v2);
+			$('#res').val(res);
+		})
+	})
+</script>
+num1:<input type="text" name="" id="n1">
+num2:<input type="text" name="" id="n2">
+result:<input type="text" name="" id="res" readonly="readonly">
+<button id="btn1">Add</button>
+</body>
+</html>

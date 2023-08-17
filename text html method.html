@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title></title>
+</head>
+<body>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('#btn1').click(function(){
+			var str=$('#p1').text();
+			$('#d1').text(str);
+		})
+		$('#btn2').click(function(){
+			var str=$('#p1').html();
+			$('#d1').html(str);
+		})
+	})
+</script>
+<p id="p1"><b> <u> Wlcome to Seed </u></b></p>
+<div id="d1"></div>
+<button id="btn1">Text()</button>
+<button id="btn2">Html()</button>
+</body>
+</html>
